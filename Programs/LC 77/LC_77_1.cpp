@@ -8,9 +8,9 @@
 using namespace std; 
 
 void findCombinations(vector<vector<int>> &result,
-					  int &n, int &k,
-					  vector<int> arr = {},
-					  int currNum = 1){
+		      int &n, int &k,
+		      vector<int> arr = {},
+		      int currNum = 1){
 
 	// Base Case
 	if(arr.size() == k){
