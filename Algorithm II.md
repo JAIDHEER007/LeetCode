@@ -1,8 +1,8 @@
 # Algorithm II
 
 | Question Number | Question Name |                                                Question Link                                                |     Folder Link     | Done? | Remarks |
-|:---------------:|:-------------:|:-----------------------------------------------------------------------------------------------------------:|:-------------------:|:-----:|:-------:|
-|34|Find First and Last Position of Element in Sorted Array|<a href = 'https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/'>Link</a>|<a href = 'https://github.com/JAIDHEER007/LeetCode/tree/main/Programs/LC%2034'>Link</a>|No|Analyze the top Solution for Improvements|
+|:---------------:|:-------------:|:-----------------------------------------------------------------------------------------------------------:|:-------------------:|:-----:|:---------------:|
+|34|Find First and Last Position of Element in Sorted Array|<a href = 'https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/'>Link</a>|<a href = 'https://github.com/JAIDHEER007/LeetCode/tree/main/Programs/LC%2034'>Link</a>|Yes|Done Using Binary Search|
 |33|Search in Rotated Sorted Array|<a href = 'https://leetcode.com/problems/search-in-rotated-sorted-array/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |74|Search a 2D Matrix|<a href = 'https://leetcode.com/problems/search-a-2d-matrix/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |153|Find Minimum in Rotated Sorted Array|<a href = 'https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
