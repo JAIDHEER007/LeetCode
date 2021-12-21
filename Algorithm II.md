@@ -22,7 +22,7 @@
 |1091|Shortest Path in Binary Matrix|<a href = 'https://leetcode.com/problems/shortest-path-in-binary-matrix/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |130|Surrounded Regions|<a href = 'https://leetcode.com/problems/surrounded-regions/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |797|All Paths From Source to Target|<a href = 'https://leetcode.com/problems/all-paths-from-source-to-target/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
-|78|Subsets|<a href = 'https://leetcode.com/problems/subsets/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
+|78|Subsets|<a href = 'https://leetcode.com/problems/subsets/'>Link</a>|<a href = 'https://github.com/JAIDHEER007/LeetCode/tree/main/Programs/LC%2078'>Link</a>|Yes|Used Powerset Algorithm|
 |90|Subsets II|<a href = 'https://leetcode.com/problems/subsets-ii/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |47|Permutations II|<a href = 'https://leetcode.com/problems/permutations-ii/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |39|Combination Sum|<a href = 'https://leetcode.com/problems/combination-sum/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
