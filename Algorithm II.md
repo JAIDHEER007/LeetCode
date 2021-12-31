@@ -9,7 +9,7 @@
 |162|Find Peak Element|<a href = 'https://leetcode.com/problems/find-peak-element/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |82|Remove Duplicates from Sorted List II|<a href = 'https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |15|3Sum|<a href = 'https://leetcode.com/problems/3sum/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
-|844|Backspace String Compare|<a href = 'https://leetcode.com/problems/backspace-string-compare/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
+|844|Backspace String Compare|<a href = 'https://leetcode.com/problems/backspace-string-compare/'>Link</a>|<a href = 'https://github.com/JAIDHEER007/LeetCode/tree/main/Programs/LC%20844'>Link</a>|Yes|Yes|
 |986|Interval List Intersections|<a href = 'https://leetcode.com/problems/interval-list-intersections/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |11|Container With Most Water|<a href = 'https://leetcode.com/problems/container-with-most-water/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |438|Find All Anagrams in a String|<a href = 'https://leetcode.com/problems/find-all-anagrams-in-a-string/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
@@ -27,7 +27,7 @@
 |47|Permutations II|<a href = 'https://leetcode.com/problems/permutations-ii/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |39|Combination Sum|<a href = 'https://leetcode.com/problems/combination-sum/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |40|Combination Sum II|<a href = 'https://leetcode.com/problems/combination-sum-ii/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
-|17|Letter Combinations of a Phone Number|<a href = 'https://leetcode.com/problems/letter-combinations-of-a-phone-number/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
+|17|Letter Combinations of a Phone Number|<a href = 'https://leetcode.com/problems/letter-combinations-of-a-phone-number/'>Link</a>|<a href = 'https://github.com/JAIDHEER007/LeetCode/tree/main/Programs/LC%2017'>Link</a>|No|Analyze the Top Python Solution|
 |22|Generate Parentheses|<a href = 'https://leetcode.com/problems/generate-parentheses/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |79|Word Search|<a href = 'https://leetcode.com/problems/word-search/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
 |213|House Robber II|<a href = 'https://leetcode.com/problems/house-robber-ii/'>Link</a>|<a href = ''>Link</a>|No|Not Yet Done|
