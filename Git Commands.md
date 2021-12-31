@@ -1,5 +1,8 @@
 ## Git commands
 
+* ```git init```
+<br>Initalizing git
+
 * ```git add . ```
 <br>adding the changes to temporary space
 
