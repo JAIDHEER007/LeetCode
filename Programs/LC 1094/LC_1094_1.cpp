@@ -1,3 +1,10 @@
+// Runtime: 47ms
+// Faster Than: 7.18 %
+// Memory Usage: 12.7 MB
+// Less Than: 6.18 %
+
+// Not Very Efficient
+
 #include<iostream>
 #include<vector>
 
