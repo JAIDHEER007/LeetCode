@@ -1,4 +1,4 @@
-# Runtime: 32ms
+# Runtime: 32ms 
 # Faster Than: 64.43%
 # Memory Usage: 14.2 MB
 # Less Than: 80.26%
