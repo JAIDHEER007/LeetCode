@@ -1,0 +1,26 @@
+// Paste this JSON file in .vscode folder
+// Works only for cpp files in LeetCode Folder
+// JSON file Name: cpp.code-snippets
+
+{
+	"Auto Input": {
+		"prefix": ["auto", "auto-input", "#include", "test", "testcase"],
+		"body": ["#include<iostream>\n#include<fstream>\n#include<vector>\n\nint main(){\n    // change the number of test cases\n    int nInputs = 0;\n\n    // test case files should be input1.txt, input2.txt, ..., inputN.txt format\n    for(int i = 1; i <= nInputs; i++){\n        string filename = \"input\" + to_string(i) + \".txt\"; \n\n        ifstream fin(filename); \n        if(!fin.is_open()){\n            cout<<\"Cannot Open the test case\"<<endl;\n            return 0; \n        }\n\n        cout<<\"======== TestCase \"<<i<<\" ========\"<<endl;\n\n\n        // Write input and output here\n        // Instead of cin use fin\n\n        // ===== START =====\n\n        \n        // ===== END =====\n    }\n    \n    return 0; \n}"],
+		"description": "Code For automatic testing.\nSave the test case as inputN.txt here N is the test case number"
+	},
+	"Competetive Coding":{
+		"prefix": ["competetive coding"],
+		"body": ["#include<bits/stdc++.h>\n\nstatic int NeedForSpeed = []() {\n    std::ios::sync_with_stdio(false);\n    std::cin.tie(NULL);\n    std::cout.tie(0);\n    return 0;\n}();\n\n// int func1()\n// int func2()\n// int func3()\n// vector<int> func4()\n\nint main(){\n\n    return 0; \n}"],
+		"description": "Competetive Coding snippet"
+	},
+	"NeedForSpeed1":{
+		"prefix": ["needforspeed1", "nfs1", "fast1", "fastinput1"],
+		"body": ["static int NeedForSpeed = []() {\n    std::ios::sync_with_stdio(false);\n    std::cin.tie(NULL);\n    std::cout.tie(0);\n    return 0;\n}();"],
+		"description": "Fast Input using Lambda Function"
+	},
+	"NeedForSpeed2":{
+		"prefix": ["needforspeed2", "nfs2", "fast2", "fastinput2"],
+		"body": ["#define NeedForSpeed ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);"],
+		"description": "Fast Input using Macro. Call NeedForSpeed in main or constructor."
+	}
+}
