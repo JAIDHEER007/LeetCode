@@ -1,1 +1,2 @@
-Enter Test Case Here 
+6
+0 1 0 1 0 1

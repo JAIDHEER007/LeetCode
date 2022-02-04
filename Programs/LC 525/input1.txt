@@ -1,1 +1,2 @@
-Enter Test Case Here 
+2
+0 1
