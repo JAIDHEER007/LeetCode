@@ -9,31 +9,8 @@
 
 using namespace std;
 
-bool isAdjacent(string word1, string word2){
-    int len1 = word1.length(); 
-    int len2 = word2.length(); 
-
-    if(len1 != len2) return false; 
-    int count = 0; 
-
-    for(int i = 0; i < len1; i++){
-        if(word1[i] != word2[i]) ++count; 
-        if(count > 1) return false; 
-    }
-
-    return true; 
-}
-
-void printQ(queue<pair<string, int>> q){
-    while(!q.empty()){
-        pair<string, int> curr = q.front(); 
-        q.pop(); 
-        cout<<(curr.first)<<" -> "; 
-    }cout<<"END"<<endl; 
-}
-
 int ladderLength(string beginWord, string endWord, vector<string> wordList){
-    // Visited unorderedmap
+    // Visited Unordered Map
     unordered_map<string, bool> visited; 
     
     // WordList Unordered Map
