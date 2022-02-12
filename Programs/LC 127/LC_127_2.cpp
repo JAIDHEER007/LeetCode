@@ -1,6 +1,3 @@
-// TLE
-// 33 / 50 Cases Passed
-
 #include<iostream>
 #include<fstream>
 #include<vector>
