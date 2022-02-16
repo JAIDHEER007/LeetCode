@@ -5,12 +5,12 @@
 {
 	"Auto Input": {
 		"prefix": ["auto", "auto-input", "#include", "test", "testcase"],
-		"body": ["#include<iostream>\n#include<fstream>\n#include<vector>\n\nint main(){\n    // change the number of test cases\n    int nInputs = 0;\n\n    // test case files should be input1.txt, input2.txt, ..., inputN.txt format\n    for(int i = 1; i <= nInputs; i++){\n        string filename = \"input\" + to_string(i) + \".txt\"; \n\n        ifstream fin(filename); \n        if(!fin.is_open()){\n            cout<<\"Cannot Open the test case\"<<endl;\n            return 0; \n        }\n\n        cout<<\"======== TestCase \"<<i<<\" ========\"<<endl;\n\n\n        // Write input and output here\n        // Instead of cin use fin\n\n        // ===== START =====\n\n        \n        // ===== END =====\n    }\n    \n    return 0; \n}"],
+		"body": ["#include<iostream>\n#include<fstream>\n#include<vector>\n\nusing namespace std;\n\nint main(){\n    // change the number of test cases\n    int nInputs = 0;\n\n    // test case files should be input1.txt, input2.txt, ..., inputN.txt format\n    for(int i = 1; i <= nInputs; i++){\n        string filename = \"input\" + to_string(i) + \".txt\"; \n\n        ifstream fin(filename); \n        if(!fin.is_open()){\n            cout<<\"Cannot Open the test case\"<<endl;\n            return 0; \n        }\n\n        cout<<\"======== TestCase \"<<i<<\" ========\"<<endl;\n\n\n        // Write input and output here\n        // Instead of cin use fin\n\n        // ===== START =====\n\n        \n        // ===== END =====\n    }\n    \n    return 0; \n}"],
 		"description": "Code For automatic testing.\nSave the test case as inputN.txt here N is the test case number"
 	},
 	"Competetive Coding":{
 		"prefix": ["competetive coding"],
-		"body": ["#include<bits/stdc++.h>\n\nstatic int NeedForSpeed = []() {\n    std::ios::sync_with_stdio(false);\n    std::cin.tie(NULL);\n    std::cout.tie(0);\n    return 0;\n}();\n\n// int func1()\n// int func2()\n// int func3()\n// vector<int> func4()\n\nint main(){\n\n    return 0; \n}"],
+		"body": ["#include<bits/stdc++.h>\n\nusing namespace std;\n\nstatic int NeedForSpeed = []() {\n    std::ios::sync_with_stdio(false);\n    std::cin.tie(NULL);\n    std::cout.tie(0);\n    return 0;\n}();\n\n// int func1()\n// int func2()\n// int func3()\n// vector<int> func4()\n\nint main(){\n\n    return 0; \n}"],
 		"description": "Competetive Coding snippet"
 	},
 	"NeedForSpeed1":{
@@ -22,5 +22,10 @@
 		"prefix": ["needforspeed2", "nfs2", "fast2", "fastinput2"],
 		"body": ["#define NeedForSpeed ios_base::sync_with_stdio(false); cin.tie(nullptr); cout.tie(nullptr);"],
 		"description": "Fast Input using Macro. Call NeedForSpeed in main or constructor."
+	},
+	"make SLL":{
+		"prefix": ["make", "single", "sll", "makeSll"],
+		"body": ["ListNode* makeSLL_string(string input){\n    if(input.length() == 0) return NULL; \n\n    string token; \n    ListNode* head = new ListNode;  // Dummy Head \n    stringstream ss(input); \n\n    ListNode* curr = head; \n    while(ss >> token){\n        ListNode* newNode = new ListNode(stoi(token)); \n\n        curr->next = newNode; \n        curr = curr->next; \n    }\n\n    if(head->next == NULL) return NULL; \n    return head->next; \n}"],
+		"description": "Make Single Linked List out of space delimited string data. "
 	}
 }
