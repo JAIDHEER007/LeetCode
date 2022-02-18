@@ -6,6 +6,7 @@
 #include<vector>
 #include<queue>
 #include<sstream>
+#include<fstream>
 
 using namespace std; 
 
@@ -204,16 +205,40 @@ string serialize(node* root){
 }
 
 int main(){
-    string data = "1 2 3 * * 4 5"; 
+    // change the number of test cases
+    int nInputs = 4;
 
-    node* root = deserialize(data); 
+    // test case files should be input1.txt, input2.txt, ..., inputN.txt format
+    for(int i = 1; i <= nInputs; i++){
+        string filename = "input" + to_string(i) + ".txt"; 
 
-    inorder(root); cout<<endl;
-    preorder(root); cout<<endl;
-    postorder(root); cout<<endl;
-    levelorder(root); cout<<endl; 
+        ifstream fin(filename); 
+        if(!fin.is_open()){
+            cout<<"Cannot Open the test case"<<endl;
+            return 0; 
+        }
 
-    cout<<serialize(root)<<endl; 
+        cout<<"======== TestCase "<<i<<" ========"<<endl;
 
+
+        // Write input and output here
+        // Instead of cin use fin
+        // ===== START =====
+        string inputData; fin>>inputData; 
+
+        node* root = deserialize(inputData); 
+        string serialData = serialize(root); 
+
+
+        if(inputData == serialData)
+            cout<<boolalpha<<true<<endl; 
+        else{
+            cout<<inputData<<endl; 
+            cout<<serialData<<endl; 
+        }
+        
+        // ===== END =====
+    }
+    
     return 0; 
 }
