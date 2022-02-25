@@ -70,7 +70,7 @@ int compareVersion(string version1, string version2){
 
 int main(){
     // change the number of test cases
-    int nInputs = 6;
+    int nInputs = 7;
 
     // test case files should be input1.txt, input2.txt, ..., inputN.txt format
     for(int i = 1; i <= nInputs; i++){

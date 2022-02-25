@@ -42,7 +42,7 @@ def compareVersion(version1: str, version2: str) -> int:
 
 
 if __name__ == '__main__': 
-    nInputs = 5
+    nInputs = 7
 
     for i in range(1, nInputs + 1): 
         fname = "input{number}.txt"
