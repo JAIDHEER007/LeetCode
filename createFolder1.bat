@@ -1,6 +1,8 @@
 @echo off
 cls
 
+echo %cd%
+
 set /p QNUM="Enter Question Number: "
 
 @REM echo "%cd%\Programs\LC %QNUM%"
