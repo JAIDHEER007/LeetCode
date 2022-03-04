@@ -1,7 +1,7 @@
-// Runtime: 32 ms
-// Faster Than: 25.32%
-// Memory Usage: 42.8 MB
-// Less Than: 20.51%
+// Runtime: 34 ms
+// Faster than: 23.54%
+// Memory Usage: 17.7 mb
+// Less Than: 32.66 % 
 
 #include<iostream>
 #include<fstream>
@@ -10,21 +10,23 @@
 using namespace std;
 
 double champagneTower(int poured, int query_row, int query_glass) {
-    vector<vector<double>> arr(100, vector<double>(100, 0.0f)); 
+    int n = query_row + 2; 
+    vector<vector<double>> arr(n, vector<double>(100, 0.0)); 
 
     arr[0][0] = poured; 
-    for(int i = 0; i < 99; ++i){
-        for(int j = 0; j < 99; ++j){
+    for(int i = 0; i < n-1; ++i){
+        for(int j = 0; j < 100; ++j){
             if(arr[i][j] == 1e-9)
                 break; 
-            double remaining = arr[i][j] - 1.0f; 
             if(arr[i][j] > 1.0f){
+                double remaining = arr[i][j] - 1.0f; 
                 arr[i + 1][j] += (remaining / 2.0f); 
                 arr[i + 1][j + 1] += (remaining / 2.0f); 
+                arr[i][j] = 1.00; 
             }
         }
     }
-    return ((arr[query_row][query_glass] > 1)?(1):(arr[query_row][query_glass]));
+    return arr[query_row][query_glass];
 }
 
 int main(){

@@ -1,7 +1,5 @@
-// Runtime: 32 ms
-// Faster Than: 25.32%
-// Memory Usage: 42.8 MB
-// Less Than: 20.51%
+// Using only 2 arrays 
+// Yet to be implemented
 
 #include<iostream>
 #include<fstream>
@@ -10,26 +8,31 @@
 using namespace std;
 
 double champagneTower(int poured, int query_row, int query_glass) {
-    vector<vector<double>> arr(100, vector<double>(100, 0.0f)); 
+    vector<vector<double>> arr(2, vector<double>(100, 0.0)); 
 
-    arr[0][0] = poured; 
-    for(int i = 0; i < 99; ++i){
-        for(int j = 0; j < 99; ++j){
-            if(arr[i][j] == 1e-9)
-                break; 
-            double remaining = arr[i][j] - 1.0f; 
-            if(arr[i][j] > 1.0f){
-                arr[i + 1][j] += (remaining / 2.0f); 
-                arr[i + 1][j + 1] += (remaining / 2.0f); 
+    arr[0][0] = poured;  
+    int i, j; 
+
+    for(i = 0; i < query_row; ++i){
+        for(j = 0; j < (i + 1); ++j){ 
+            if(arr[i & 1][j] > 1.0f){
+                double remaining = arr[i & 1][j] - 1.0f; 
+                arr[(i + 1) & 1][j] += (remaining / 2.0f); 
+                arr[(i + 1) & 1][j + 1] += (remaining / 2.0f); 
+                arr[i & 1][j] = 0.0; 
             }
         }
     }
-    return ((arr[query_row][query_glass] > 1)?(1):(arr[query_row][query_glass]));
+    --j; 
+    while(j >= 0) arr[(i - 1) & 1][j--] = 1.0; 
+    
+    double result = arr[query_row & 1][query_glass]; 
+    return min(result, 1.0); 
 }
 
 int main(){
     // change the number of test cases
-    int nInputs = 4;
+    int nInputs = 7;
 
     // test case files should be input1.txt, input2.txt, ..., inputN.txt format
     for(int i = 1; i <= nInputs; i++){
