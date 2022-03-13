@@ -1,4 +1,3 @@
-from optparse import Option
 import os
 from typing import Optional
 cwd = os.path.dirname(__file__)
