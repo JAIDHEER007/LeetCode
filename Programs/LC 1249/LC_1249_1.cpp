@@ -31,7 +31,7 @@ string minRemoveToMakeValid(string s){
 
 int main(){
     // change the number of test cases
-    int nInputs = 5;
+    int nInputs = 6;
 
     // test case files should be input1.txt, input2.txt, ..., inputN.txt format
     for(int i = 1; i <= nInputs; i++){
@@ -52,8 +52,7 @@ int main(){
         // ===== START =====
         string s; fin>>s; 
 
-        cout<<s<<endl; 
-        cout<<minRemoveToMakeValid(s)<<"|"<<endl; 
+        cout<<minRemoveToMakeValid(s)<<endl; 
         
         // ===== END =====
     }
