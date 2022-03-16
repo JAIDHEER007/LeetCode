@@ -100,6 +100,11 @@ void linkedList::deleteAtTail(){
 }
 
 void linkedList::deleteAtMiddle(int key){
+    // if linked list is empty 
+    // Do nothing
+    if((head == tail) && (head == NULL))
+        return; 
+        
     node* prevNode = head; 
 
     // check if head node is matching node

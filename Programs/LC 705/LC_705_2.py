@@ -58,6 +58,10 @@ class linkedList:
         delNode.next = None
         
     def deleteAtMiddle(self, key: int) -> None:
+        # Linked List Empty
+        if (self.__head == self.__tail) and self.__head is None:
+            return
+        
         prevNode = self.__head
 
         if prevNode.val == key:
