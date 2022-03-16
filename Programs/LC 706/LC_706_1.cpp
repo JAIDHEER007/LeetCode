@@ -219,69 +219,30 @@ void MyHashMap::printLLM(){
     cout<<endl; 
 }
 
-// Testing the linked List
-/* 
-int main(){
-    linkedList* ll1 = new linkedList(); 
-
-    ll1->printSLL(); 
-
-    ll1->addAtTail(1);
-    ll1->addAtTail(2);
-    ll1->addAtTail(3);
-    ll1->addAtTail(4);
-    ll1->addAtTail(5);
-
-    ll1->printSLL(); 
-
-    cout<<boolalpha<<(ll1->contains(1))<<endl; 
-    cout<<boolalpha<<(ll1->contains(3))<<endl; 
-    cout<<boolalpha<<(ll1->contains(5))<<endl; 
-    cout<<boolalpha<<(ll1->contains(10))<<endl; 
-    cout<<boolalpha<<(ll1->contains(100))<<endl; 
-
-    ll1->addAtTail(6);
-    ll1->addAtTail(7);
-    ll1->printSLL(); 
-
-    ll1->deleteAtMiddle(1); 
-    ll1->printSLL(); 
-
-    ll1->deleteAtMiddle(7); 
-    ll1->printSLL(); 
-
-    ll1->deleteAtMiddle(3); 
-    ll1->printSLL(); 
-
-    ll1->deleteAtMiddle(5); 
-    ll1->printSLL(); 
-
-    return 0; 
-}
- */
 
 int main(){
-    MyHashMap hmap1; 
+    MyHashMap hmap1(10); 
 
-    // hmap1.printLLM(); 
+    vector<int> keys{
+        229, 99, 369, 337, 20, 353, 236, 53, 112, 86, 
+        171, 378, 153, 28, 195, 135, 363, 21, 197, 123, 
+        129, 230, 360, 78, 383, 276, 283, 167, 290, 231, 
+        54, 366, 358, 164, 336, 291, 121, 91, 191, 48,
+        343, 146, 181, 332, 330, 265, 87, 186, 321, 313
+    }; 
 
-    hmap1.put(1, 1); 
-    hmap1.put(2, 2); 
+    vector<int> values{
+        157, 93, 350, 33, 392, 193, 156, 258, 131, 248, 
+        145, 46, 299, 150, 115, 65, 369, 266, 345, 52, 
+        364, 375, 336, 103, 249, 232, 329, 83, 111, 234, 
+        386, 144, 362, 187, 20, 116, 134, 367, 233, 114, 
+        267, 167, 389, 68, 216, 127, 333, 42, 320, 303
+    }; 
 
-    hmap1.printLLM(); 
+    int n = keys.size(); 
 
-    cout<<hmap1.get(1)<<endl; 
-    cout<<hmap1.get(3)<<endl; 
-
-    hmap1.put(2, 1); 
-
-    hmap1.printLLM(); 
-
-    cout<<hmap1.get(2)<<endl; 
-
-    hmap1.remove(2); 
-
-    cout<<hmap1.get(2)<<endl; 
+    for(int i = 0; i < n; i++)
+        hmap1.put(keys[i], values[i]); 
 
     hmap1.printLLM(); 
     
