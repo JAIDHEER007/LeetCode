@@ -150,7 +150,7 @@ class MyHashSet : protected linkedList{
     public: 
         int tsize;  // table size
 
-        MyHashSet(int _tsize = 10){
+        MyHashSet(int _tsize = 10){ // Use a Prime Number like 499 for best performance
             tsize = _tsize; 
 
             llmap = new linkedList[tsize];
@@ -235,11 +235,23 @@ int main(){
 
     hset1.printLLM(); 
 
-    hset1.add(1);
-    hset1.add(2);
+    vector<int> data{
+            185, 96, 167, 34, 161, 24, 47, 58, 187, 88, 
+            63, 31, 138, 78, 145, 139, 70, 65, 56, 79, 
+            141, 133, 127, 28, 169, 27, 179, 67, 110, 37, 
+            111, 177, 121, 199, 144, 132, 60, 134, 68, 35, 
+            162, 118, 100, 123, 90, 57, 42, 93, 20, 55, 
+            163, 71, 148, 130, 27, 43, 133, 114, 25, 47, 
+            33, 152, 151, 103, 83, 134, 38, 188, 52, 81, 
+            66, 154, 90, 192, 22, 144, 60, 102, 20, 23, 
+            100, 63, 87, 31, 131, 169, 193, 62, 77, 122, 
+            178, 200, 96, 196, 173, 58, 35, 24, 194, 165
+    }; 
+
+    for(int element:data)
+        hset1.add(element); 
 
     hset1.printLLM(); 
-
     
 
     return 0; 
