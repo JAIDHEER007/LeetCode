@@ -47,7 +47,6 @@ void printSLL(ListNode* head){
 
 ListNode* addTwoNumbers(ListNode* head1, ListNode* head2){
     int carry = 0; 
-    int sum = 0; 
 
     ListNode* dummyHead = new ListNode(); 
     ListNode* curr = dummyHead; 
