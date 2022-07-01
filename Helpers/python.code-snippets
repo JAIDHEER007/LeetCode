@@ -1,0 +1,12 @@
+{
+	"Auto Input": {
+		"prefix": ["test-python", "testcase-python"],
+		"body": ["import os\ncwd = os.path.dirname(__file__)\n\nif __name__ == '__main__': \n    nInputs = 5\n\n    for i in range(1, nInputs + 1): \n        fname = \"input{number}.txt\"\n        fpath = os.path.join(cwd, fname.format(number = i))\n        \n        print(\"======== TestCase {number} ========\".format(number = i))\n        try: \n            with open(fpath, \"r\") as fileHandle: \n                #  ===== START =====\n                pass\n\n                #  ===== END =====\n        except FileNotFoundError:\n            print(\"Cannot Open the test case\")\n            break"],
+		"description": "Code For automatic testing.\nSave the test case as inputN.txt here N is the test case number"
+	}, 
+	"make SLL":{
+		"prefix": ["sll-python"], 
+		"body": ["from typing import Optional\nclass ListNode:\n    def __init__(self, val = 0, next = None):\n        self.val = val \n        self.next = next\n    \ndef makeSLL_string(data: str) -> Optional[ListNode]:\n    if len(data) == 0:\n        return None\n    \n    dummyHead = ListNode()\n    curr = dummyHead\n\n    for element in list(map(int, data.split())):\n        newNode = ListNode(val = element)\n        curr.next = newNode\n        curr = curr.next\n    \n    return dummyHead.next   # dummyHead will be destroyed by the Python Garbage Collector\n\ndef printSLL(head: Optional[ListNode]) -> None: \n    curr = head\n\n    while curr is not None: \n        print((curr.val), end = \" -> \")\n        curr = curr.next\n    print(\"END\")\n"], 
+		"description": "Make Single Linked List out of space delimited string data. "
+	}
+}

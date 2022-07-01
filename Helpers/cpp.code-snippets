@@ -4,8 +4,8 @@
 
 {
 	"Auto Input": {
-		"prefix": ["auto", "auto-input", "#include", "test", "testcase"],
-		"body": ["#include<iostream>\n#include<fstream>\n#include<vector>\n\nusing namespace std;\n\nint main(){\n    // change the number of test cases\n    int nInputs = 0;\n\n    // test case files should be input1.txt, input2.txt, ..., inputN.txt format\n    for(int i = 1; i <= nInputs; i++){\n        string filename = \"input\" + to_string(i) + \".txt\"; \n\n        ifstream fin(filename); \n        if(!fin.is_open()){\n            cout<<\"Cannot Open the test case\"<<endl;\n            return 0; \n        }\n\n        cout<<\"======== TestCase \"<<i<<\" ========\"<<endl;\n\n\n        // Write input and output here\n        // Instead of cin use fin\n\n        // ===== START =====\n\n        \n        // ===== END =====\n    }\n    \n    return 0; \n}"],
+		"prefix": ["test-cpp", "testcase-cpp"],
+		"body": ["#include<iostream>\n#include<fstream>\n#include<vector>\n#include<sstream>\n\nusing namespace std;\n\nint main(){\n    // change the number of test cases\n    int nInputs = 0;\n\n    // test case files should be input1.txt, input2.txt, ..., inputN.txt format\n    for(int i = 1; i <= nInputs; i++){\n        string filename = \"input\" + to_string(i) + \".txt\"; \n\n        ifstream fin(filename); \n        if(!fin.is_open()){\n            cout<<\"Cannot Open the test case\"<<endl;\n            return 0; \n        }\n\n        cout<<\"======== TestCase \"<<i<<\" ========\"<<endl;\n\n\n        // Write input and output here\n        // Instead of cin use fin\n\n        // ===== START =====\n\n        \n        // ===== END =====\n    }\n    \n    return 0; \n}"],
 		"description": "Code For automatic testing.\nSave the test case as inputN.txt here N is the test case number"
 	},
 	"Competetive Coding":{
@@ -24,8 +24,8 @@
 		"description": "Fast Input using Macro. Call NeedForSpeed in main or constructor."
 	},
 	"make SLL":{
-		"prefix": ["make", "single", "sll", "makeSll"],
-		"body": ["ListNode* makeSLL_string(string input){\n    if(input.length() == 0) return NULL; \n\n    string token; \n    ListNode* head = new ListNode;  // Dummy Head \n    stringstream ss(input); \n\n    ListNode* curr = head; \n    while(ss >> token){\n        ListNode* newNode = new ListNode(stoi(token)); \n\n        curr->next = newNode; \n        curr = curr->next; \n    }\n\n    if(head->next == NULL) return NULL; \n    return head->next; \n}"],
+		"prefix": ["sll-cpp"],
+		"body": ["typedef struct ListNode{\n    int val; \n    ListNode* next; \n\n    ListNode(int _val = 0){\n        val = _val; \n        next = NULL; \n    }\n} ListNode; \n\n\nListNode* makeSLL_string(string input){\n    if(input.length() == 0) return NULL; \n\n    string token; \n    ListNode* head = new ListNode;  // Dummy Head \n    stringstream ss(input); \n\n    ListNode* curr = head; \n    while(ss >> token){\n        ListNode* newNode = new ListNode(stoi(token)); \n\n        curr->next = newNode; \n        curr = curr->next; \n    }\n\n    if(head->next == NULL) return NULL; \n    return head->next; \n}\n\nvoid printSLL(ListNode* head){\n    ListNode* curr = head; \n\n    while(curr){\n        cout<<(curr->val)<<\" -> \";\n        curr = curr->next; \n    }\n    cout<<\"END\"<<endl;\n}"],
 		"description": "Make Single Linked List out of space delimited string data. "
 	}
 }
