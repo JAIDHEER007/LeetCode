@@ -1,15 +1,11 @@
-import java.util.Arrays;
 import java.util.Scanner;
-import java.util.Comparator;
-import java.lang.Math;
-import java.rmi.activation.UnknownObjectException;
 import java.io.File;
 import java.io.FileNotFoundException; 
 
 class Solution{
     public String convert(String s, int numRows) {
         if(numRows == 1) return s; 
-        
+
         String[] rows = new String[numRows]; 
 
         for(int i = 0; i < numRows; ++i)
