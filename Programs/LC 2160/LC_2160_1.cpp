@@ -27,8 +27,6 @@ int minimumSum(int num){
             startWithNum1 = !startWithNum1; 
         }
     }
-    // cout<<num1<<endl;
-    // cout<<num2<<endl; 
     return num1 + num2; 
 }
 
