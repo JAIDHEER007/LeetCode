@@ -1,4 +1,5 @@
 *.exe
+*.class
 .vscode/
 Automation/
 DP_A_3.py
