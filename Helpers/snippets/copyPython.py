@@ -31,7 +31,7 @@ else:
             print("\nFile Contents are:")
             print(joinedFC)
 
-            pyperclip.copy(joinedFC.replace('\n', '\R'))
+            pyperclip.copy(joinedFC.replace('"', '\\"').replace('\n', '\\n'))
     except Exception as exp:
         print(exp)
         print("Try Again!!")
